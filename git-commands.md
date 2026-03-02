@@ -311,7 +311,11 @@ cmd:    git stash apply restores stashed changes to the working directory withou
 
 cmd: stash specific file : key point: before stashing you must add to the branch
     
+D
 git stash push -m "stash configfile" config.yml
+
+git stash push -m "stash configfile" config.yml : stash for specific file
+feature-hotfix
 
 git stash list : show the all stash in list
 
@@ -321,3 +325,8 @@ git stash pop stash@{0} : resote specific stash file using index and also delete
 
 
 #Task 5: Cherry Picking
+
+
+
+cmd: git cherry-pick <commit-hash> : this command is used to aply the changes introduced by one or more specific commits from on branch to the current working branch.
+
